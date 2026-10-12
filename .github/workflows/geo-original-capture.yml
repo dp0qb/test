@@ -1,0 +1,44 @@
+name: Capture original mineral exploration source pages
+on:
+  push:
+    branches:
+      - chatgpt/geo-original-pages-20261012
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  original-page-capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout isolated branch
+        uses: actions/checkout@v4
+      - name: Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install headless browser and PDF capture packages
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright requests pillow pymupdf
+          python -m playwright install --with-deps chromium
+      - name: Capture original browser interfaces and unmodified source images
+        run: |
+          python capture_geo_original.py
+      - name: Save original source archive as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-webpage-screenshots-and-assets
+          path: |
+            original_sources/
+            资源勘查工程_原网页实拍截图与原始图片附件.zip
+          if-no-files-found: error
+          retention-days: 30
+      - name: Add only resulting materials to isolated branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add original_sources/
+          git add '资源勘查工程_原网页实拍截图与原始图片附件.zip'
+          git diff --cached --quiet || git commit -m "Archive real web screenshots, PDF files and unmodified source photos"
+          git push origin HEAD

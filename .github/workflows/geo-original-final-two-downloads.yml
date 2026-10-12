@@ -1,0 +1,50 @@
+name: Divide validated batch 1+2 original media into two ZIP archives
+on:
+  push:
+    branches:
+      - chatgpt/geo-curated-batch12-split2-20261012
+    paths:
+      - split_previous_archive_exactly_two.py
+      - .github/workflows/geo-original-final-two-downloads.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  make-two-archives:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout checksum-preserving split process
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install ZIP inspection and image validation libraries
+        run: python -m pip install Pillow pymupdf
+      - name: Download previously verified final source original archive
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: 38247826710
+          name: solid-mineral-curated-originals-part01
+          path: prior_archive
+      - name: Split into two source-grouped independent original-media packages
+        run: python -u split_previous_archive_exactly_two.py
+      - name: Upload source files part 1, as a direct ZIP without nesting
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-curated-1of2
+          path: two_downloads/part01/
+          if-no-files-found: error
+          compression-level: 6
+          retention-days: 90
+      - name: Upload source files part 2, as a direct ZIP without nesting
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-curated-2of2
+          path: two_downloads/part02/
+          if-no-files-found: error
+          compression-level: 6
+          retention-days: 90

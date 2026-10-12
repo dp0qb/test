@@ -1,0 +1,558 @@
+{
+  "date": "2026-10-12",
+  "description": "Public original webpage capture targets. No generated graphics, no re-typesetting.",
+  "sources": [
+    {
+      "category": "enterprise_recruit",
+      "slug": "jx_copper_2027_exploration",
+      "title": "江西铜业南昌矿产勘查分公司2027招聘",
+      "url": "https://www.jxcc.com/recruitmentAnnouncement/details_475_7119.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "jx_copper_2026_geol",
+      "title": "江西铜业地勘工程2026招聘",
+      "url": "https://www.jxcc.com/recruitmentAnnouncement/details_475_6525.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "zijin_2027_csu",
+      "title": "紫金矿业2027全球校园招聘中南大学",
+      "url": "https://career.csu.edu.cn/campus/view/id/588494"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "zijin_2027_cug",
+      "title": "紫金矿业2027中国地质大学",
+      "url": "https://cug.91wllm.cn/campus/view/id/1001713"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "zijin_2027_gdufs",
+      "title": "紫金矿业2027校园招聘广东外语外贸大学",
+      "url": "https://career.gdufs.edu.cn/web/Index/jobs-brief-detail?id=VGUXSN2"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "china_gold_2027_cug",
+      "title": "中国黄金集团地质公司2027招聘中国地质大学",
+      "url": "https://cug.91wllm.cn/campus/view/id/1005196"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "china_gold_2027_jlu",
+      "title": "中国黄金集团地质公司2027招聘吉林大学",
+      "url": "https://jdjywpt.jlu.edu.cn/mportal/recruit/details?id=2eec4cdac48e4572b47f2db943eae990"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "chinalco_2027",
+      "title": "中铝集团2027高校毕业生招聘",
+      "url": "https://myjob.dlmu.edu.cn/campus/view/id/869053"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "westmining_2027",
+      "title": "西部矿业集团2027届校园招聘",
+      "url": "https://www.91wllm.cn/campus/viewgqzpxx/id/1005358"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "tongling_metals_2027_resources",
+      "title": "铜陵有色矿产资源中心2027地质技术招聘",
+      "url": "https://jy.slu.edu.cn/2026/0928/c556a58640/page.htm"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmoc_2027_hust",
+      "title": "洛阳钼业2027矿世奇才华科",
+      "url": "https://job.hust.edu.cn/zpinfo1/2450570.htm"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmoc_2027_hebut",
+      "title": "洛阳钼业2027矿世奇才河北工业大学",
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/81558.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmoc_2027_salary",
+      "title": "洛阳钼业2027待遇和专业要求",
+      "url": "https://gzzy.bysjy.com.cn/detail/career?id=714854"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "sheng_tun_2027",
+      "title": "盛屯集团2027全球校园招聘官网",
+      "url": "https://shengtun2027.zhaopin.com/announce/index.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "china_nonferrous_2027_nfc",
+      "title": "中色股份2027校园招聘",
+      "url": "https://career.csu.edu.cn/campus/view/id/590482"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "china_nonferrous_2027_group",
+      "title": "中国有色集团2027校园招聘700人",
+      "url": "https://m.fenbi.com/page/exam-information-detail/469004393664512"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "xiamen_tungsten_2027_job",
+      "title": "厦门钨业矿产资源集团2027地质技术员7人招聘岗位表",
+      "url": "https://hera-webapp.fenbi.com/api/article/detail?app=web&id=469613600069632"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "xiamen_tungsten_2027_campus",
+      "title": "厦门钨业2027校园招聘高校官方公告",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/116989.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "xiamen_tungsten_2027_site",
+      "title": "厦门钨业2027校招原站",
+      "url": "https://campus.51job.com/cxtc2027/school.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "guangxi_key_metals_2027",
+      "title": "广西关键金属产业发展集团2027招聘原岗位表",
+      "url": "https://job.ustc.edu.cn/Specialrecruitment/info.aspx?itemid=10095"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "ganfeng_2027_tju",
+      "title": "赣锋锂业2027天津大学校招",
+      "url": "https://job.tju.edu.cn/recruitment/content/type/2/id/6466.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "ganfeng_2027_csu",
+      "title": "赣锋锂业2027中南大学具体岗位和人数",
+      "url": "https://career.csu.edu.cn/teachin/view/id/118292"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "minmetals_2026_explore",
+      "title": "五矿勘查开发有限公司2026地质工程师岗位",
+      "url": "https://www.explore.minmetals.com.cn/xwdt_4612/gsxw/202608/t20260820_317337.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "sd_gold_2026_official",
+      "title": "山东黄金集团2026春季校园招聘官网",
+      "url": "https://www.sd-gold.com/cmscontent/5525.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "sd_gold_2026_join",
+      "title": "山东黄金集团2026人才招聘门户",
+      "url": "https://www.sd-gold.com/column/125/"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmg_wuhan_2027",
+      "title": "中冶武勘2027届校园招聘广州大学",
+      "url": "https://jy.gzhu.edu.cn/index.php/web/Index/jobs-brief-detail?id=SMUXSVZ"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmg_wuhan_2027_cug",
+      "title": "中冶武勘2027中国地质大学岗位",
+      "url": "https://cug.91wllm.cn/job/view/id/2385983"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmg_shandong_2027_official",
+      "title": "中国冶金地质总局山东局2027校园招聘官网岗位图",
+      "url": "https://cmgbsd.cn/news_detail/3381.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "minmetals_mcc_jinji_2027",
+      "title": "中冶金吉矿业2027海外地质管培生7人",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/68358.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "jx_copper_2027_jlu",
+      "title": "江西铜业2027矿产勘查岗位吉林大学",
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=accf40c0a9e34d98976cb4949ac1c260"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmg_2027_cumtb",
+      "title": "中国冶金地质总局2027大学招聘宣讲",
+      "url": "https://jy.cumtb.edu.cn/Zhaopin/zuijin.html?hold_date=2026-10-9&id=3e598dd1-a018-cfdb-fa00-51ba8ec30416"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "zhaojin_mining_campus",
+      "title": "招金矿业校园招聘官方页面",
+      "url": "https://www.zhaojin.com.cn/recruit/campus.html"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "xiamen_tungsten_2027_official",
+      "title": "厦门钨业2027全球校招官网首页",
+      "url": "https://campus.51job.com/cxtc2027/"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "xi_tungsten_2026_geology",
+      "title": "厦门钨业2026招地质资源岗位历史对比",
+      "url": "https://www.career.muc.edu.cn/front/zwxx.jspa?xqzwId=34773&zpxxId=30277"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "zijin_2027_csu_job",
+      "title": "紫金矿业2027招人岗位官方高校页",
+      "url": "https://career.csu.edu.cn/job/view/id/1189158"
+    },
+    {
+      "category": "enterprise_recruit",
+      "slug": "cmoc_2027_csu_job",
+      "title": "洛阳钼业2027大学发布岗位",
+      "url": "https://career.csu.edu.cn/job/view/id/1191887"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_first_official",
+      "title": "中国地质调查局2026年第一批714人招聘",
+      "url": "https://m.cgs.gov.cn/zpxx/202601/t20260126_848533.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_first_mohrss",
+      "title": "中国地质调查局2026首批招聘人社部公告",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/gxbyszpzl/202601/t20260126_566069.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_second",
+      "title": "中国地质调查局2026年第二批182人招聘",
+      "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/gxbyszpzl/202604/t20260403_572065.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_third",
+      "title": "中国地质调查局2026年第三批80人招聘含岗位附件",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs_4225/sydwrsgl/202607/t20260717_580418.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_recruit_list",
+      "title": "中国地质调查局2026招聘信息栏",
+      "url": "https://www.cgs.gov.cn/tzgg/zpxx/"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "gansu_geology_2026_203",
+      "title": "甘肃省地矿局2026校园招聘203人含岗位表",
+      "url": "https://www.gsdkj.net/xxgk/rsxx/content_100788"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "gansu_geology_2026_jobs",
+      "title": "甘肃地矿局2026原招聘岗位列表高校转载",
+      "url": "https://job.kmust.edu.cn/detail/online?id=3471596&menu_id="
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "gansu_geology_2026_jlu",
+      "title": "甘肃地矿局2026校园招聘吉林大学",
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=449cb3c2d62a4ce783d02865fb29d132"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "shandong_geology_2026_72",
+      "title": "山东省地矿局2026招聘72人49岗位",
+      "url": "https://hera-webapp.fenbi.com/api/article/detail?app=web&id=467733470532608"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "shandong_sixth_2026_details",
+      "title": "山东地矿局第六地质大队2026招聘地质勘查本科",
+      "url": "https://geo.jlu.edu.cn/info/1655/15653.htm"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "hunan_geology_2026",
+      "title": "湖南省地质院直属单位2026招聘",
+      "url": "https://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202603/t20260330_33943916.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "jiangxi_geology_2026_phd",
+      "title": "江西省地质局2026高层次岗位20人原表",
+      "url": "https://www.jxrcrsksta.com/content/7490?categoryId=18"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "beijing_geology_2026_36",
+      "title": "北京市地质矿产勘查院2026招聘36人",
+      "url": "https://rsj.beijing.gov.cn/xxgk/gkzp/202604/t20260424_4609004.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "henan_geology_2026",
+      "title": "河南省地质局矿产资源勘查中心2026招聘",
+      "url": "https://www.hndzjkczx.cn/Articles/Details/20260114"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "hubei_2026_sydw_original",
+      "title": "湖北省2026省直事业单位招聘含地质岗位表",
+      "url": "https://zrzyt.hubei.gov.cn/fbjd/xxgkml/zkly/202608/t20260811_5992436.shtml"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "hubei_geology_2026_result",
+      "title": "湖北省地质局2026招聘录用信息",
+      "url": "https://www.00rencai.com/career/zhaokaoxinxi/125781.htm"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "xizang_geology_2026_talent",
+      "title": "西藏自治区2026紧缺人才地质类招聘",
+      "url": "https://www.xizang.gov.cn/zwgk/xxfb/gsgg_428/202512/t20251216_514429.html"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "jx_copper_2026_geology_2",
+      "title": "江西铜业地勘工程2026第二批校园招聘",
+      "url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=8115b09caa884246a35cf00832de26da"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cug_2027_campus_activity",
+      "title": "中国地质大学2027秋招行业招聘会报道现场",
+      "url": "https://bm.cugb.edu.cn/xgb/c/2026-10-09/858792.shtml"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "cgs_2026_career_central",
+      "title": "中国地调局招聘岗位统一公开平台",
+      "url": "https://www.sydwgkzp.cn/cgs/"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "shandong_2026_geology_dual",
+      "title": "山东地矿局2026公开招聘具体岗位页面",
+      "url": "https://www.fenbi.com/page/fenxiaozhaokaodetail/4/2894/467733470532608"
+    },
+    {
+      "category": "geology_institution_recruit",
+      "slug": "gansu_2026_jobs_table",
+      "title": "甘肃省地质矿产勘查开发局招聘岗位203人列表",
+      "url": "https://www.fenbi.com/page/positions-exams/4/521231"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_policy_pr",
+      "title": "教育部人社部2026高校毕业生就业政策宣传",
+      "url": "https://www.moe.gov.cn/srcsite/A15/s3265/202604/t20260423_1434600.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_guopin",
+      "title": "八部门2026国聘行动政策原文",
+      "url": "https://www.moe.gov.cn/srcsite/A15/s3265/202605/t20260522_1437356.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_guopin_news",
+      "title": "2026国聘行动启动新闻",
+      "url": "https://hudong.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202606/t20260602_1438533.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_employment_notice",
+      "title": "人社部财政部2026高校毕业生就业政策",
+      "url": "https://www.jingyuan.gov.cn/zfxxgk/bmhxzxxgk/bmdw/rlzyhshbzj/fdzdgknr/wgjy/art/2026/art_1b7f03be202542549bb8d8c63ee43933.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_youth_support",
+      "title": "人社部2026高校毕业生青年就业攻坚行动",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202607/t20260701_579344.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_job_spring",
+      "title": "教育部2026春季促就业攻坚行动",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202603/t20260319_1431535.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_hundred",
+      "title": "教育部2026百日冲刺就业政策",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202606/t20260608_1439860.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_jobs_enter_campus",
+      "title": "人社部2026就业公共服务进校园百日行动",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202604/t20260403_572095.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_jobs_enter_campus",
+      "title": "教育部2026就业公共服务进校园百日行动",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/202604/t20260403_1432954.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_jobs_campaigns",
+      "title": "人社部2026全年公共就业招聘专项活动计划",
+      "url": "https://www.mohrss.gov.cn/wap/zc/zcwj/202601/t20260120_565785.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_jobs_policies_list",
+      "title": "人社部2026规范性就业政策目录原网页",
+      "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/gfxwj/jy/index.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_policy_notice_mirror",
+      "title": "人社部财政部2026高校就业政策各项详细解读",
+      "url": "https://www.jingtai.gov.cn/zfxxgk/bmhxzxxgk/xzfzcbmzsjgml/xrsj/fdzdgknr/lzyj/bmwj/art/2026/art_4dcdc1f6bca044e5bff62249458e65bd.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2026_upskilling",
+      "title": "教育部双千计划就业能力提升",
+      "url": "https://www.moe.gov.cn/jyb_zzjg/huodong/202605/t20260509_1436020.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "moe_2025_students_jobs",
+      "title": "教育部关于做好2025届就业工作的政策原件",
+      "url": "https://www.moe.gov.cn/srcsite/A15/s3265/202411/t20241112_1162526.html"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "mohrss_2026_employment_service_news",
+      "title": "人社部2026青年就业攻坚行动政策要点官网",
+      "url": "https://chrm.mohrss.gov.cn/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90%E7%A4%BE%E4%BC%9A%E4%BF%9D%E9%9A%9C%E9%83%A8%E5%90%AF%E5%8A%A82026%E5%B9%B4%E9%AB%98%E6%A0%A1%E6%AF%95%E4%B8%9A%E7%94%9F%E7%AD%89%E9%9D%92%E5%B9%B4%E5%B0%B1/"
+    },
+    {
+      "category": "graduate_employment_policy",
+      "slug": "liaoning_2026_jobs_policy",
+      "title": "辽宁2026高校毕业生稳岗拓岗就业政策原页",
+      "url": "https://www.ln.gov.cn/web/qmzx/5.15zwgkr%28d20j%29/zcztc/msbz/2026051516404662402/index.shtml"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mining_law_implement",
+      "title": "中华人民共和国矿产资源法实施条例国务院令第839号",
+      "url": "https://fgk.chinatax.gov.cn/zcfgk/c100010/c5250264/content.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mnr_fifteenth_exploration",
+      "title": "自然资源部2026十五五找矿突破战略行动部署",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202606/t20260616_862702.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_cgs_national_meeting",
+      "title": "2026全国地质调查工作会议",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202601/t20260109_855194.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mnr_basic_geology",
+      "title": "自然资源部加强基础性地质调查通知",
+      "url": "https://www.cgs.gov.cn/tzgg/tzgg/202601/t20260105_855571.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mnr_basic_geology_explain",
+      "title": "自然资源部加强基础地质调查政策解读",
+      "url": "https://www.cgs.gov.cn/zcjd/202601/t20260115_855791.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mnr_fifteenth_resources_census",
+      "title": "十五五动态更新矿产资源家底全国部署",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202605/t20260526_860859.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_2025_mining_annual_report",
+      "title": "自然资源部2025非油气地勘统计年报官方政策页",
+      "url": "https://www.hunan.gov.cn/zqt/zcsd/202605/t20260512_33974698.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mineral_report_2026",
+      "title": "中国矿产资源报告2026官方发布",
+      "url": "https://www.cgs.gov.cn/ddzt/zgkydh/2026kydh/ywkb2026kydh/202609/t20260920_869339.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mineral_report_official_infographic",
+      "title": "中国矿产资源报告2026自然资源部图解原图",
+      "url": "https://www.pecmnr.cn/news.html?aid=5318154"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_national_deposit_congress",
+      "title": "2026全国矿床会议十四五找矿成果",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202610/t20261011_870243.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_2025_geology_fund",
+      "title": "全国省级地勘基金2025投入统计通报",
+      "url": "https://ghhzy.yq.gov.cn/xwgg/hydt/202609/t20260909_2236859.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_mineral_report_mofcom",
+      "title": "中国矿产资源报告2026商务部转载原页",
+      "url": "https://hzf.mofcom.gov.cn/article/zyfw/hybg/kydt/202609/8026.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_cgs_mineral_tech",
+      "title": "中国地质科学院2026矿产科技创新",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202602/t20260205_855215.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_geology_talent_seminar",
+      "title": "2026地质发展研究中心人才与科技部署",
+      "url": "https://www.cgs.gov.cn/ywdt/dwdt/202602/t20260206_855391.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2025_mnr_strategy_interview",
+      "title": "自然资源部2025矿产勘查增储上产政策",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202511/t20251112_820576.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_cgs_geology_meeting_press",
+      "title": "2026全国地调工作会议找矿队伍需求",
+      "url": "https://www.cgs.gov.cn/ywdt/ddyw/202601/t20260112_855199.html"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2026_2025_mineral_report_2025_comparison",
+      "title": "2025地勘统计年报行业收入就业人数",
+      "url": "https://m.thepaper.cn/newsDetail_forward_33183251"
+    },
+    {
+      "category": "geological_industry_policy_data",
+      "slug": "2025_fiveyear_mineral_development",
+      "title": "中国矿产资源报告2026政府机构公开解读",
+      "url": "https://www.forestry.gov.cn/c/www/lcdt/688240.jhtml"
+    }
+  ]
+}

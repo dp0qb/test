@@ -1,0 +1,138 @@
+name: Small downloadable original-geology-source bundles
+on:
+  push:
+    branches:
+      - chatgpt/geo-original-small-downloads-20261012
+    paths:
+      - split_existing_geo.py
+      - .github/workflows/geo-original-small-downloads.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-and-split:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout verified original images and screenshots
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image and PDF validators
+        run: python -m pip install pillow pymupdf
+      - name: Repackage source files without modifying them
+        run: python split_existing_geo.py
+      - name: Verify all per-part image data and checksums
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import csv,hashlib
+          count=0
+          for part in sorted(Path('parts').glob('part*')):
+              with (part/'文件哈希核验.csv').open(encoding='utf-8-sig') as f:
+                  rows=list(csv.DictReader(f))
+              for r in rows:
+                  path=part/r['relative_path']
+                  content=path.read_bytes()
+                  assert hashlib.sha256(content).hexdigest()==r['sha256'],path
+                  assert len(content)==int(r['size_bytes']),path
+                  count+=1
+              print(part, len(rows), 'files verified')
+          assert count >= 50, count
+          print('ALL_VERIFIED', count)
+          PY
+      - name: Upload original media 01
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-01
+          path: parts/part01/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 02
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-02
+          path: parts/part02/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 03
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-03
+          path: parts/part03/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 04
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-04
+          path: parts/part04/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 05
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-05
+          path: parts/part05/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 06
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-06
+          path: parts/part06/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 07
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-07
+          path: parts/part07/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 08
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-08
+          path: parts/part08/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 09
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-09
+          path: parts/part09/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 10
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-10
+          path: parts/part10/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 11
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-11
+          path: parts/part11/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload original media 12
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-part-12
+          path: parts/part12/
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Upload all parts source index
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-original-parts-index
+          path: |
+            parts/ALL_PARTS_MANIFEST.csv
+            parts/REJECTED_FILES.txt
+          if-no-files-found: ignore
+          retention-days: 90

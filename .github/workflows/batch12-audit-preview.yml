@@ -1,0 +1,37 @@
+name: Print and review solid-mineral professional relevance audit
+on:
+  push:
+    branches: [chatgpt/geo-curated-batch12-20261012]
+    paths: [.github/workflows/batch12-audit-preview.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  audit-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: 38247008425
+          name: geo-batch12-professional-relevance-audit
+          path: filter_audit
+      - name: List actual kept and excluded pages for review
+        run: |
+          python - <<'PY'
+          import csv,collections
+          p='filter_audit/专业相关性逐页审查.csv'
+          rows=list(csv.DictReader(open(p,encoding='utf-8-sig')))
+          print('AUDIT_TOTAL',len(rows),'kept',sum(x['status']=='保留' for x in rows))
+          for x in rows:
+             print('SOURCE\t'+ '\t'.join([x['status'],x['cat'],x['grade'],x['slug'] or x['title'],x['reason'][:55],x['exact_terms'][:90],x['primary'][:110],x['excerpts'][:120]]))
+          PY
+      - name: Commit audit result to isolated curation branch for deterministic packaging
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add filter_audit/
+          git diff --cached --quiet || git commit -m 'Store relevant-source audit evidence with original-source curation'
+          git push origin HEAD

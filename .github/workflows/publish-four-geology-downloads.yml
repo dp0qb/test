@@ -1,0 +1,76 @@
+name: Publish four verified original geology archives for direct public download
+on:
+  push:
+    branches: [chatgpt/geo-curated-4parts-20261013]
+    paths:
+      - .github/workflows/publish-four-geology-downloads.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release-zip-downloads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RELEASE_TAG: geology-solid-originals-batch1-batch2-20261013
+    steps:
+      - name: Check out clean isolated packaging branch
+        uses: actions/checkout@v4
+      - name: Recover four previously SHA256-verified archive files
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: 38334180235
+          pattern: geology-verified-originals-*-of-4
+          merge-multiple: true
+          path: dist
+      - name: Independently verify ZIP integrity and hashes before publishing
+        run: |
+          python3 - <<'PY'
+          import hashlib, pathlib, zipfile
+          parts = sorted(pathlib.Path('dist').glob('Geo_Solid_Originals_Batch1_Batch2_Part_*_of_04.zip'))
+          assert len(parts) == 4, [str(p) for p in parts]
+          expected = {
+            1:'dcd7779ffd708defa9a723324cb2502e0001d6a5733c770498480ea3bb6577af',
+            2:'3b8ff6b4dfdc4f1209491108d537fc25a19c157b6e565a1ca987fed1a153cdcc',
+            3:'5cf232b67b75f60a7b40d28fc9172b449cb128831ba13a33a1a933229f283312',
+            4:'a7fa30b78182dce122bc3bbae8a87fd7fa2395969b7f4eaaaf9da7da4b6709ca'
+          }
+          total = 0
+          for number, archive in enumerate(parts, 1):
+            actual = hashlib.sha256(archive.read_bytes()).hexdigest()
+            assert actual == expected[number], (number, actual)
+            with zipfile.ZipFile(archive) as f:
+              assert f.testzip() is None, archive
+              member = '两批精选原始素材/00_索引与审核记录/本分包原始素材清单.csv'
+              import csv, io
+              original_files = list(csv.DictReader(io.StringIO(f.read(member).decode('utf-8-sig'))))
+              total += len(original_files)
+              assert len(original_files) >= 8
+              print('ZIP_OK', number, archive.name, archive.stat().st_size, len(original_files), actual, flush=True)
+          assert total == 57, total
+          print('TOTAL_SOURCE_FILES_VERIFIED', total)
+          PY
+      - name: Create public GitHub Release with directly downloadable original ZIP assets
+        run: |
+          set -eu
+          if gh release view "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+            gh release upload "${RELEASE_TAG}" dist/*.zip --repo "${GITHUB_REPOSITORY}" --clobber
+          else
+            gh release create "${RELEASE_TAG}" dist/*.zip --repo "${GITHUB_REPOSITORY}" --target "${GITHUB_SHA}" --title "资源勘查工程（固体）两批精选原始素材｜4份独立ZIP" --notes "四个独立ZIP，合计57份经过专业相关性筛选的原始网页截图、照片及招聘政策附件。SHA256与ZIP解压均已验证；图片没有重新排版。公开资料来源见每包内的审核索引。"
+          fi
+          gh release view "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" --json assets,url --jq '{release_url:.url,assets:[.assets[]|{name:.name,size:.size,url:.url}]}'
+      - name: Verify public HTTPS release asset headers and downloadable byte counts
+        run: |
+          python3 - <<'PY'
+          import pathlib, subprocess, time, urllib.request
+          base = 'https://github.com/dp0qb/test/releases/download/geology-solid-originals-batch1-batch2-20261013/'
+          for part in sorted(pathlib.Path('dist').glob('Geo_Solid_Originals_Batch1_Batch2_Part_*_of_04.zip')):
+            url = base+part.name
+            out = subprocess.run(['curl','-L','-I','-sS','-o','/dev/null','-w','%{http_code} %{url_effective}','--max-time','60',url],capture_output=True,text=True)
+            print('PUBLIC_DOWNLOAD_CHECK',part.name,out.stdout[:260], 'curl_exit',out.returncode,flush=True)
+            assert out.returncode==0, (url,out.stderr[:300])
+            assert out.stdout[:3] in ('200','302','206'),(url,out.stdout[:300])
+          PY

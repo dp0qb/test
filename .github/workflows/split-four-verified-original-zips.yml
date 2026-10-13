@@ -1,0 +1,66 @@
+name: Repack verified mineral exploration images as four smaller ZIPs
+on:
+  push:
+    branches:
+      - chatgpt/geo-curated-4parts-20261013
+    paths:
+      - split_curated_4_parts.py
+      - .github/workflows/split-four-verified-original-zips.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  make-four-zip-files:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout source-preserving repack script
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download already curated 57 original files archive
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: 38247826710
+          name: solid-mineral-curated-originals-part01
+          path: input_archive
+      - name: Split the exact original source bytes into four complete and verified ZIP files
+        run: python -u split_curated_4_parts.py
+      - name: Upload first zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: geology-verified-originals-1-of-4
+          path: deliverables/Geo_Solid_Originals_Batch1_Batch2_Part_01_of_04.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+      - name: Upload second zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: geology-verified-originals-2-of-4
+          path: deliverables/Geo_Solid_Originals_Batch1_Batch2_Part_02_of_04.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+      - name: Upload third zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: geology-verified-originals-3-of-4
+          path: deliverables/Geo_Solid_Originals_Batch1_Batch2_Part_03_of_04.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+      - name: Upload fourth zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: geology-verified-originals-4-of-4
+          path: deliverables/Geo_Solid_Originals_Batch1_Batch2_Part_04_of_04.zip
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+      - name: Final package metadata for validation
+        run: cat deliverables/manifest_4_parts.json
